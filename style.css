@@ -19,4 +19,32 @@ body {
 .dark-mode {
     background-color: black;
     color: white;
+}.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.slider {
+    width: 80%;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+    width: 300px; /* Adjust as needed */
+    margin-right: 10px;
+}
+
+button {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
 }

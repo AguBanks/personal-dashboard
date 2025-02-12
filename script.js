@@ -9,10 +9,10 @@ updateClock(); // Run once at the start
 
 // Random quote generator
 const quotes = [
-    "Believe you can and you're halfway there.",
-    "Keep pushing forward.",
-    "Every moment is a fresh beginning.",
-    "Do what you can, with what you have, where you are."
+    "I know you love me.",
+    "I love you too.",
+    "You are the love of my life.",
+    "We can do better for each other."
 ];
 function showRandomQuote() {
     let randomIndex = Math.floor(Math.random() * quotes.length);
@@ -23,4 +23,20 @@ showRandomQuote();
 // Dark mode toggle
 document.getElementById("dark-mode-toggle").addEventListener("click", function() {
     document.body.classList.toggle("dark-mode");
+});const slides = document.querySelector(".slides");
+const leftBtn = document.getElementById("leftBtn");
+const rightBtn = document.getElementById("rightBtn");
+
+let scrollAmount = 0;
+const scrollStep = 320; // Adjust for image size
+
+rightBtn.addEventListener("click", () => {
+    scrollAmount += scrollStep;
+    slides.style.transform = translateX(-${scrollAmount}px);
+});
+
+leftBtn.addEventListener("click", () => {
+    scrollAmount -= scrollStep;
+    if (scrollAmount < 0) scrollAmount = 0;
+    slides.style.transform = translateX(-${scrollAmount}px);
 });
