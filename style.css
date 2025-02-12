@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: white;
+    color: black;
+    transition: background 0.3s, color 0.3s;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+#dark-mode-toggle {
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
